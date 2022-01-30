@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>informations</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      #inf1 {
+        text-align: center;
+        color: aqua;
+      }
+      #myPara {
+        color: aqua;
+      }
+      #jjk {
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="image.html">images</a></li>
+      <li><a class="active" href="information.html">informations</a></li>
+      <li><a href="goals.html">goals</a></li>
+      <li><button class="hhh" onclick="lightmode()">light mode</button></li>
+      <li><button class="hhh" onclick="darkmode()">dark mode</button></li>
+      <li><button class="hhh" onclick=" largefont()">large font</button></li>
+      <li><button class="hhh" onclick="smallfont()">small font</button></li>
+      <li></li>
+    </ul>
+
+    <p id="inf1">informations about Firmino</p>
+
+    <div>
+      <p id="myPara">
+        At Hoffenheim, Firmino primarily played as an attacking midfielder,[92]
+        or as a second striker, but was also used as a forward, winger or
+        central midfielder, with Firmino using his speed, close control and
+        vision wherever he is deployed.[93][94] After initially starting as a
+        left winger at Liverpool under Brendan Rodgers, new manager Jürgen Klopp
+        used Firmino more centrally, initially as a False 9.[95] However, after
+        impressing under Klopp's pressing system, Firmino established himself as
+        Liverpool's first choice centre-forward by the 2017–18 season.[96] Ian
+        Doyle of the Liverpool Echo referred to him as "a true Liverpool number
+        nine", whose "numbers are up there with Harry Kane and Sergio
+        Agüero."[97] Ryan Babel, a teammate of Firmino's at Hoffenheim,
+        described him as "A tricky <br />
+        He can dribble, shoot, he has a great shot, he can play a lot of through
+        balls and his assists are very good", while also praising a heading
+        ability which would not be common amongst other players of Firmino's
+        slender build and relatively small stature,[23] a unique trait which
+        journalist and ESPN contributor Michael Cox has also noted.[98] Babel
+        also stated that Firmino had a humble mentality and no problems with
+        attitude.[23] Manager Hemerson Maria also stated that he was impressed
+        with Firmino's "strong personality and mentality."[99] In addition to
+        his technical skills, creativity, link-up play, and goalscoring, Firmino
+        has also been praised by his managers, teammates, and pundits for his
+        positional sense, mobility, intelligent movement, and ability to make
+        attacking runs off the ball, which often draws opposing players out of
+        position and creates space for his teammates.[98][100][101][102][103]
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Roberto_Firmino" id="jjk"
+        >for more</a
+      >
+    </div>
+    <script>
+      function lightmode() {
+        document.body.style.backgroundColor = "white";
+        document.getElementById("inf1").style.color = "black";
+        document.getElementById("myPara").style.color = "black";
+      }
+    </script>
+
+    <script>
+      function darkmode() {
+        document.body.style.backgroundColor = "black";
+        document.getElementById("inf1").style.color = "white";
+        document.getElementById("myPara").style.color = "white";
+      }
+    </script>
+    <script>
+      function largefont() {
+        document.getElementById("myPara").style.fontSize = "28px";
+      }
+    </script>
+
+    <script>
+      function smallfont() {
+        document.getElementById("myPara").style.fontSize = "23px";
+      }
+    </script>
+  </body>
+</html>

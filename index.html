@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="0_GettyImages-1334150468.jpg" />
+    <title>roberto firminio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url(fir_.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      .fon {
+        font-size: 20px;
+      }
+      #table {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html" class="fon">Home</a></li>
+      <li><a href="image.html" class="fon">images</a></li>
+      <li><a href="information.html" class="fon">informations</a></li>
+      <li><a href="goals.html" class="fon">goals</a></li>
+      <li><button class="hhh" onclick="lightmode()">light mode</button></li>
+      <li><button class="hhh" onclick="darkmode()">dark mode</button></li>
+    </ul>
+
+    <center>
+      <h1>roberto firminio</h1>
+
+      <div id="table">
+        <table>
+          <tr>
+            <th>team</th>
+            <th>goals</th>
+          </tr>
+
+          <tr>
+            <td>LIVERPOOL FC</td>
+            <td>295</td>
+          </tr>
+
+          <tr>
+            <td>TSG 1899 Hoffenheim FC</td>
+            <td>153</td>
+          </tr>
+          <tr>
+            <td>Figueirense Futebol Clube</td>
+            <td>38</td>
+          </tr>
+        </table>
+      </div>
+    </center>
+    <div id="footer"><p>julian shaer</p></div>
+
+    <script>
+      function lightmode() {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+      }
+    </script>
+
+    <script>
+      function darkmode() {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      }
+    </script>
+  </body>
+</html>
