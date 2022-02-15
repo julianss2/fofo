@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta @media screen and (max-width:400px){ #all{ display: block; width:
+    100%; } body{ background-color:#000 } } } @media screen and(min-width:401)
+    and (max-width:650){ body{ background-color: #00ff; } } @media screen
+    and(min-width:651) and (max-width:786){ body{ background-color: #008000; } }
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /
     <link rel="icon" href="0_GettyImages-1334150468.jpg" />
@@ -12,12 +23,6 @@
         background-repeat: no-repeat;
         background-size: 100%;
       }
-      .fon {
-        font-size: 20px;
-      }
-      #table {
-        background-color: rgba(0, 0, 0, 0.2);
-      }
     </style>
   </head>
   <body>
@@ -26,8 +31,6 @@
       <li><a href="image.html" class="fon">images</a></li>
       <li><a href="information.html" class="fon">informations</a></li>
       <li><a href="goals.html" class="fon">goals</a></li>
-      <li><button class="hhh" onclick="lightmode()">light mode</button></li>
-      <li><button class="hhh" onclick="darkmode()">dark mode</button></li>
     </ul>
     <center>
       <h1>roberto firminio</h1>
@@ -55,20 +58,19 @@
         </table>
       </div>
     </center>
-    <div id="footer"><p>julian shaer</p></div>
-
-    <script>
-      function lightmode() {
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-      }
-    </script>
-
-    <script>
-      function darkmode() {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-      }
-    </script>
+    <div id="footer">
+      <style>
+        #footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: rgba(0, 26, 290);
+          color: white;
+          text-align: center;
+        }
+      </style>
+      <p>julian shaer</p>
+    </div>
   </body>
 </html>
