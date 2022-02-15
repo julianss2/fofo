@@ -4,8 +4,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
       rel="stylesheet"
+    />
+    <meta @media screen and (max-width:400px){ #all{ display: block; width:
+    100%; } body{ background-color:#000 } } } @media screen and(min-width:401)
+    and (max-width:650){ body{ background-color: #00ff; } } @media screen
+    and(min-width:651) and (max-width:786){ body{ background-color: #008000; } }
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -30,7 +41,9 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="image.html">images</a></li>
-      <li><a class="active" href="information.html">informations</a></li>
+      <li>
+        <a class="active" href="information.html" class="fon">informations</a>
+      </li>
       <li><a href="goals.html">goals</a></li>
       <li><button class="hhh" onclick="lightmode()">light mode</button></li>
       <li><button class="hhh" onclick="darkmode()">dark mode</button></li>
@@ -84,8 +97,8 @@
     <script>
       function darkmode() {
         document.body.style.backgroundColor = "black";
-        document.getElementById("inf1").style.color = "white";
-        document.getElementById("myPara").style.color = "white";
+        document.getElementById("inf1").style.color = "aqua";
+        document.getElementById("myPara").style.color = "aqua";
       }
     </script>
     <script>
