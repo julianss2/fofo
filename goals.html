@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>goals</title>
+    <meta 
+    @media screen and (max-width:400px){
+      #all{
+         display: block;
+         width: 100%;
+     }      body{
+             background-color:#000
+         }
+      }
+  }
+  
+   @media screen and(min-width:401) and (max-width:650){
+       body{
+           background-color: #00ff;
+       }
+   }
+  
+  
+   @media screen and(min-width:651) and (max-width:786){
+      body{
+          background-color: #008000;
+      }
+  } 
+  />
     <style>
-      #gof {
-        color: #000;
+      .gof{
+        color: aqua;
+      }
+      body{
+        background-color: darkslategray;
       }
     </style>
   </head>
   <body>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li id="Home"><a href="index.html">Home</a></li>
       <li><a href="image.html">images</a></li>
       <li><a href="information.html">informations</a></li>
-      <li><a class="active" href="goals.html">goals</a></li>
+      <li><a class="active" href="goals.html" class="fon">goals</a></li>
       <li><button class="hhh" onclick="lightmode()">light mode</button></li>
       <li><button class="hhh" onclick="darkmode()">dark mode</button></li>
     </ul>
     <center>
-      <p id="gof">all goals for firminio at LIVERPOOL</p>
+      <p class="gof">all goals for firminio at LIVERPOOL</p>
       <iframe
         width="560"
         height="315"
@@ -29,15 +59,27 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+<br>
+<p class="gof">all goals for firminio at Hoffenheim</p>
+
       
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/30E8pc1gFvk?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pictur
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fRDTqcJUumM?start=10"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p class="gof">all goals for firminio at Figueirense FC<p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/30E8pc1gFvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fRDTqcJUumM?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                                                                                                                            
-      </center>
+    </center>
     <script>
       function lightmode() {
         document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
+        document.getElementById("gof").style.color = "black";
       }
     </script>
 
@@ -48,10 +90,7 @@
       }
     </script>
 
-    <script>
-      function largefont() {
-        document.body.style.fontSize = "33px";
-      }
+
     </script>
   </body>
 </html>
